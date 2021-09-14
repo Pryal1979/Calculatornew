@@ -37,12 +37,10 @@ public class finalNumberAndRoman {
                     a = Arabic[Ar];
                     b = Arabic[Br];
                     switch (PrW[1]) {
-                     case "+": System.out.println(TranslateToRoman.Roman((a + b))); break;
-                     case "*": System.out.println(TranslateToRoman.Roman((a * b))); break;
-                     case "/": System.out.println(TranslateToRoman.Roman((a / b))); break;
-                     case "-": if (a >= b) { System.out.println(TranslateToRoman.Roman((a - b))); break; }
-                               else if (a < b) {System.out.println("Недопустимая операция c римскими числами - результат меньше 0 ");
-                                                System.exit(0);}
+                     case "+": System.out.println(TranslateToRoman.Roman(a + b)); break;
+                     case "*": System.out.println(TranslateToRoman.Roman(a * b)); break;
+                     case "/": System.out.println(TranslateToRoman.Roman(a / b)); break;
+                     case "-": System.out.println(TranslateToRoman.Roman(a - b)); break;
                      default: {System.out.println("Неправильный синтаксис арифметической операции");
                                System.exit(0);}
                     }
