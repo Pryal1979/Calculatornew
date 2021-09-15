@@ -9,7 +9,7 @@ public class TranslateToRoman {
  public static String Roman(int s)
     {
         String[] Roman10={"I","II","III","IV","V","VI","VII","VIII","IX","X"},
-                Roman100={"X","XX","XXX","XL","L","LX","LXX","LXXXX","XC","C"};
+                Roman100={"X","XX","XXX","XL","L","LX","LXX","LXXX","XC","C"};
         String Otvet="Ответ = ";
         if (s<0) Otvet="Недопустимая операция с римскими числами";
         else if (s==0) Otvet=Otvet+"0";
